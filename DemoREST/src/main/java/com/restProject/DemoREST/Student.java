@@ -1,9 +1,9 @@
-package com.telusko.DemoREST;
+package com.restProject.DemoREST;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class Alien {
+public class Student {
 	private String name;
 	private int points;
 	private int id;
@@ -28,7 +28,7 @@ public class Alien {
 	}
 	@Override
 	public String toString() {
-		return "Alien [name=" + name + ", points=" + points + ", id=" + id + "]";
+		return "Student [name=" + name + ", points=" + points + ", id=" + id + "]";
 	}
 	
 	
