@@ -1,4 +1,4 @@
-package com.telusko.DemoREST;
+package com.restDemo.DemoREST;
 
 
 import java.util.List;
