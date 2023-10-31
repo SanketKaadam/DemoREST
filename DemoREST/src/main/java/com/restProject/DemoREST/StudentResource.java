@@ -10,32 +10,32 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("aliens")
-public class AlienResource {
+@Path("Students")
+public class StudentResource {
 	
-	AlienRepository repo = new AlienRepository();
+	StudentRepository repo = new StudentRepository();
  
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
-	public List<Alien> getAliens() {
+	public List<Student> getStudents() {
 		System.out.println("Method Called");
 		
 		
-		return repo.getAliens();
+		return repo.getStudents();
 	}
 	
 	
 	@GET
-	@Path("alien/{id}")
+	@Path("Student/{id}")
 	@Produces(MediaType.APPLICATION_XML)
-	public Alien getAlien(@PathParam("id") int id) {
+	public Student getStudent(@PathParam("id") int id) {
 		
-		return  repo.getAlien(id);
+		return  repo.getStudent(id);
 	} 
 	
 	@POST
-	@Path("alien")
-	public Alien createAlien(Alien a1) {
+	@Path("Student")
+	public Student createStudent(Student a1) {
 		System.out.println(a1);
 		repo.create(a1);
 		
